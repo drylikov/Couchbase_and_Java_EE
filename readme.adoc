@@ -27,60 +27,6 @@ To see how to connect Docker to this machine, run: docker-machine env couchbase-
 ```console
 eval $(docker-machine env couchbase-javaee)
 ```
-+
-. Use Docker Compose file from https://github.com/drylikov/docker-images/blob/master/wildfly-couchbase-javaee7/docker-compose.yml and start the application environment as:
-+
-```console
-docker-compose --x-networking up -d
-Creating network "wildflycouchbasejavaee7" with driver "None"
-Pulling mywildfly (arungupta/wildfly-admin:latest)...
-latest: Pulling from arungupta/wildfly-admin
-d634beec75db: Pull complete
-11e066facd0e: Pull complete
-032d1eaf4eb3: Pull complete
-817a305e8912: Pull complete
-032da1985e02: Pull complete
-70c838b4cb1f: Pull complete
-b07030da953f: Pull complete
-b8954e98fb7f: Pull complete
-13c7488db70a: Pull complete
-caaf593918ea: Pull complete
-76bb7924107a: Pull complete
-9863ef42276d: Pull complete
-ccdc777044c3: Pull complete
-51f3c097dbb8: Pull complete
-1c69e5bfe110: Pull complete
-25de62cd9f5b: Pull complete
-c0646b15bb61: Pull complete
-7998280ddb06: Pull complete
-921fbccf36b6: Pull complete
-21cb88ee2ede: Pull complete
-4cce2f92cd6e: Pull complete
-Digest: sha256:a86d9e3807dd002ef070eea16bb90ae55d966da0a53fdc8ab121dcb505db1a20
-Status: Downloaded newer image for arungupta/wildfly-admin:latest
-Creating wildflycouchbasejavaee7_mywildfly_1
-Pulling mycouchbase (couchbase/server:latest)...
-latest: Pulling from couchbase/server
-c0de77b824d9: Pull complete
-7f183271ade4: Pull complete
-02cc7e934fcc: Pull complete
-fd97fd3cdea7: Pull complete
-c55759c6a761: Pull complete
-2520930519cb: Pull complete
-6597f338e656: Pull complete
-7b49522b71f2: Pull complete
-7789bd549668: Pull complete
-63ff6eb12d29: Pull complete
-1095332e719c: Pull complete
-a64bcb125f74: Pull complete
-13fe802e8814: Pull complete
-d5c923126f19: Pull complete
-39d4343f1a05: Pull complete
-13d820fd06ce: Pull complete
-Digest: sha256:0e983929897ae9bd396533ff7875f30027290c6acf164a66c967ca8884507381
-Status: Downloaded newer image for couchbase/server:latest
-Creating db
-```
 
 
 === Configure Couchbase server
